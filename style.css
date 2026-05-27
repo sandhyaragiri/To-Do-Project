@@ -9,5 +9,42 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(to bottom right, rgb(145, 102, 246), rgb(176, 127, 241), rgb(255, 136, 136));
+    background: linear-gradient(to bottom right, rgb(25, 18, 41), rgb(213, 181, 254), rgb(255, 136, 136));
 }
+
+#input, button {
+    padding: 20px;
+    border-radius: 20px;
+    margin: 5px;
+    border: 1px solid white;
+    background-color: transparent;
+    box-shadow: 0 0 5px white;
+}
+
+#input:focus {
+    outline: none;
+}
+
+#input::placeholder {
+    color: white;
+    opacity: 0.5;
+    font-weight: light;
+    letter-spacing: 2px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+    color: white;
+    font-weight: bold;
+}
+
+button:focus {
+    background-color:rgb(25, 18, 41);
+    color: white;
+}
+
+#container {
+    font-size: 1.8em;
+    color: white;
+}
+
