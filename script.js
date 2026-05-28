@@ -9,16 +9,13 @@ button.addEventListener("click", ()=>{
 
     const task = document.createElement("div");
     const text = document.createElement("p");
-    const deleteBtn = document.createElement("delbtn");
+    const deleteBtn = document.createElement("button");
 
     text.textContent = input.value;
     deleteBtn.textContent = "Delete";
 
-    //styling here
-    deleteBtn.style.cursor = "pointer";
-
-    text.style.backgroundColor = "blue";
-    
+//CSS class
+task.classList.add("task");
 
 // append text and button INSIDE task
     task.appendChild(text);
