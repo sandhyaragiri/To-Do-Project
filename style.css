@@ -111,8 +111,7 @@ body {
 
     color: white;
     font-size: 1rem;
-    line-height: 1.5;
-
+    line-height: 1.5em;
     word-break: break-word;
 }
 
@@ -122,7 +121,7 @@ body {
     border: none;
     border-radius: 12px;
 
-    background-color: #111827;
+    background-color: #f7f8f967;
     color: white;
 
     font-size: 0.9rem;
@@ -136,8 +135,10 @@ body {
 }
 
 .task button:hover {
-    background-color: #1f2937;
+    background-color: #f13e3e;
     transform: scale(1.03);
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @media (max-width: 600px) {

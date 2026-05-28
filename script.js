@@ -12,7 +12,7 @@ button.addEventListener("click", ()=>{
     const deleteBtn = document.createElement("button");
 
     text.textContent = input.value;
-    deleteBtn.textContent = "Strike Off";
+    deleteBtn.textContent = "Delete";
 
 //CSS class
 task.classList.add("task");
