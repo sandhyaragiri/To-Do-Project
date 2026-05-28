@@ -6,30 +6,61 @@
 
 body {
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 40px 20px;
 
     background: linear-gradient(135deg, #77064e, #312e81);
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.app {
-    width: min(600px, 100%);
+
+/* HEADER */
+
+.header {
+    padding: 10px 20px;
+    background-color:rgba(16, 16, 16, 0.505);
+    border-radius: 3em;
+    margin: 10px;
+    box-shadow: 0 0 5px rgb(14, 9, 9);
 }
+
+.logo {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+/* MAIN */
+
+.main {
+    display: flex;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+
+/* TODO APP */
+
+.todo-app {
+    width: min(650px, 100%);
+}
+
+
+/* INPUT SECTION */
 
 .input-box {
     display: flex;
     gap: 12px;
-    margin-bottom: 20px;
+
+    margin-bottom: 25px;
 }
 
 #input {
     flex: 1;
 
     padding: 18px;
+
     border: none;
     border-radius: 18px;
 
@@ -44,12 +75,13 @@ body {
 
 #input:focus {
     outline: none;
+
     transform: translateY(-2px);
-    box-shadow: 0 15px 35px rgba(251, 251, 251, 0);
 }
 
 #input::placeholder {
     color: rgba(0, 0, 0, 0.5);
+
     letter-spacing: 1px;
 }
 
@@ -63,23 +95,28 @@ body {
     color: white;
 
     font-weight: 600;
-    cursor: pointer;
 
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 
     transition: 0.2s ease;
 }
 
 #btn:hover {
     transform: translateY(-2px) scale(1.02);
-    opacity: 0.95;
 }
+
+
+/* TASK CONTAINER */
 
 #container {
     display: flex;
     flex-direction: column;
+
     gap: 14px;
 }
+
+
+/* TASK CARD */
 
 .task {
     width: 100%;
@@ -87,6 +124,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     gap: 12px;
 
     padding: 16px;
@@ -110,8 +148,10 @@ body {
     flex: 1;
 
     color: white;
+
     font-size: 1rem;
-    line-height: 1.5em;
+    line-height: 1.5;
+
     word-break: break-word;
 }
 
@@ -121,7 +161,8 @@ body {
     border: none;
     border-radius: 12px;
 
-    background-color: #f7f8f967;
+    background-color: rgba(255, 255, 255, 0.2);
+
     color: white;
 
     font-size: 0.9rem;
@@ -136,12 +177,19 @@ body {
 
 .task button:hover {
     background-color: #f13e3e;
+
     transform: scale(1.03);
-    color: white;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+/* RESPONSIVE */
+
 @media (max-width: 600px) {
+
+    .header {
+        padding: 20px;
+        text-align: center;
+    }
 
     .input-box {
         flex-direction: column;
@@ -160,3 +208,4 @@ body {
         width: 100%;
     }
 }
+
