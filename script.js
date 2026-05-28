@@ -12,7 +12,7 @@ button.addEventListener("click", ()=>{
     const deleteBtn = document.createElement("button");
 
     text.textContent = input.value;
-    deleteBtn.textContent = "Delete";
+    deleteBtn.textContent = "Strike Off";
 
 //CSS class
 task.classList.add("task");
@@ -32,4 +32,11 @@ task.classList.add("task");
     //clear output
 
     input.value = "";
+     input.focus();
+    
 });
+
+ input.addEventListener("keydown", (e)=>{
+        if(e.key === "Enter")
+        button.click();
+    });
