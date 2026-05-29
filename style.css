@@ -18,7 +18,7 @@ body {
     padding: 10px 20px;
     background-color:rgba(247, 245, 245, 0.068);
     border-radius: 3em;
-    margin: 10px;
+    margin: 20px;
     box-shadow: 0 0 5px rgb(250, 249, 249);
 }
 
@@ -175,27 +175,39 @@ body {
 }
 
 .task button:hover {
-    background-color: #f13e3e;
+    background: linear-gradient(135deg, #0577ea, #95cff5, #a055f1);
 
     transform: scale(1.03);
 }
+
 
 
 /* RESPONSIVE */
 
 @media (max-width: 600px) {
 
+    body {
+        background: linear-gradient(to bottom, rgb(101, 247, 245),rgba(0, 0, 0, 0.374),#EEAECA);
+    }
+
     .header {
-        padding: 20px;
+        padding: 10px;
         text-align: center;
+        box-shadow: 0 0 5px black;
     }
 
     .input-box {
         flex-direction: column;
     }
 
+    #input {
+         box-shadow: 0 0 5px black;
+    }
+
     #btn {
         width: 100%;
+        box-shadow: 0 0 5px black;
+        background: linear-gradient(135deg, #6da5ef, #e9d5ff);
     }
 
     .task {
@@ -205,6 +217,9 @@ body {
 
     .task button {
         width: 100%;
+        box-shadow: 0 0 4px blue;
     }
+
+
 }
 
