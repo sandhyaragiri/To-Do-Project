@@ -7,7 +7,7 @@
 body {
     min-height: 100vh;
 
-    background: linear-gradient(135deg, #77064e, #312e81);
+    background-color: white;
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -15,17 +15,68 @@ body {
 /* HEADER */
 
 .header {
-    padding: 10px 20px;
-    background-color:rgba(247, 245, 245, 0.068);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: transparent;
     border-radius: 3em;
     margin: 20px;
-    box-shadow: 0 0 5px rgb(250, 249, 249);
+    box-shadow: 0 0 3px rgba(12, 12, 12, 0.952);
 }
 
 .logo {
-    color: white;
+    color: black;
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+/* //toggle  */
+
+#theme {
+    padding: 10px 15px;
+    font-size: 1.2em;
+    background-color: transparent;
+    border: none;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.dark header {
+    background: transparent;
+    box-shadow: 0 0 5px white;
+}
+
+.dark .logo {
+    color: white;
+}
+
+.dark #input {
+    background: transparent;
+    box-shadow: 0 0 5px white;
+    color: white;
+}
+
+.dark #input::placeholder {
+    color: white;
+}
+
+.dark .task {
+    background: transparent;
+    box-shadow: 0 0 5px white;
+    color: white;
+}
+
+.dark .task p {
+    color: white;
+}
+
+.dark .task button {
+    background-color: white;
+    color: black;
 }
 
 
@@ -60,14 +111,12 @@ body {
 
     padding: 18px;
 
-    border: none;
+    border: 1px solid black;
     border-radius: 18px;
 
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: transparent;
 
     font-size: 1rem;
-
-    box-shadow: 0 0 5px rgba(247, 245, 245, 0.991);
 
     transition: 0.2s ease;
 }
@@ -90,7 +139,7 @@ body {
     border: none;
     border-radius: 18px;
 
-    background-color: #43f3a7;
+    background-color: #e90a76;
     color: white;
 
     font-weight: 600;
@@ -130,7 +179,7 @@ body {
 
     border-radius: 20px;
 
-    background: rgba(255, 255, 255, 0.15);
+    background: rgb(255, 255, 255);
 
     backdrop-filter: blur(10px);
 
@@ -146,9 +195,9 @@ body {
 .task p {
     flex: 1;
 
-    color: white;
+    color: black;
 
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.5;
 
     word-break: break-word;
@@ -160,7 +209,7 @@ body {
     border: none;
     border-radius: 12px;
 
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(16, 16, 16, 0.893);
 
     color: white;
 
@@ -175,24 +224,29 @@ body {
 }
 
 .task button:hover {
-    background: linear-gradient(135deg, #0577ea, #95cff5, #a055f1);
+    background-color: rgb(199, 113, 245);
 
     transform: scale(1.03);
 }
+
+.task .remove-btn:hover {
+    background-color: red;
+
+}
+
+.completed p {
+    text-decoration: line-through;
+    text-decoration-color: red;
+    text-decoration-thickness: 3px;
+    opacity: 0.7;
+}
+
 
 
 
 /* RESPONSIVE */
 
 @media (max-width: 600px) {
-
-    body {
-       background: linear-gradient(
-         135deg,
-        #f8fafc 0%,
-        #f1f5f9 100%);
-    }
-
     .header {
         padding: 10px;
         text-align: center;
@@ -208,7 +262,8 @@ body {
     }
 
     #input {
-         box-shadow: 0 0 5px black;
+        border: 1px solid rgb(11, 6, 6);
+         background-color: transparent;
     }
 
     #btn {
@@ -228,8 +283,8 @@ body {
 
     .task button {
         width: 100%;
-        box-shadow: 0 0 4px blue;
-        color: black;
+        background-color: black;
+        color: white;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 

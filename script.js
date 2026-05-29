@@ -1,18 +1,33 @@
 const input = document.querySelector("#input");
 const button = document.querySelector("#btn");
 const container = document.querySelector("#container");
+const theme = document.querySelector("#theme");
+
+//toggle theme here goes..
+
+theme.addEventListener("click", ()=>{
+   document.body.classList.toggle("dark");
+   
+   if(document.body.classList.contains("dark")) {
+    theme.textContent = "☀️";
+   }
+
+   else {
+    theme.textContent = "🌙";
+   }
+})
+
 
 button.addEventListener("click", ()=>{
     if(input.value === ""){
         return;
     }
-
     const task = document.createElement("div");
     const text = document.createElement("p");
     const deleteBtn = document.createElement("button");
 
     text.textContent = input.value;
-    deleteBtn.textContent = "Delete";
+    deleteBtn.textContent = "Task Done";
 
 //CSS class
 task.classList.add("task");
@@ -25,10 +40,18 @@ task.classList.add("task");
     container.appendChild(task);
 
     /* //delete functionality */
-    deleteBtn.addEventListener("click", ()=>{
+    deleteBtn.addEventListener("click", () => {
+    
+    if (!task.classList.contains("completed")) {
+        task.classList.add("completed");
+        deleteBtn.textContent = "Discard";
+        deleteBtn.classList.add("remove-btn");
+    } 
+    else {
         task.remove();
-    });
+    }
 
+});
     //clear output
 
     input.value = "";
