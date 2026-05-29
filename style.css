@@ -187,13 +187,20 @@ body {
 @media (max-width: 600px) {
 
     body {
-        background: linear-gradient(to bottom, rgb(101, 247, 245),rgba(0, 0, 0, 0.374),#EEAECA);
+       background: linear-gradient(
+         135deg,
+        #f8fafc 0%,
+        #f1f5f9 100%);
     }
 
     .header {
         padding: 10px;
         text-align: center;
         box-shadow: 0 0 5px black;
+    }
+
+    .logo {
+        color: black;
     }
 
     .input-box {
@@ -215,9 +222,15 @@ body {
         align-items: flex-start;
     }
 
+    .task p {
+        color: black;
+    }
+
     .task button {
         width: 100%;
         box-shadow: 0 0 4px blue;
+        color: black;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
 
