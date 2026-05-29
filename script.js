@@ -15,13 +15,14 @@ theme.addEventListener("click", ()=>{
    else {
     theme.textContent = "🌙";
    }
-})
+});
 
 
 button.addEventListener("click", ()=>{
     if(input.value === ""){
         return;
     }
+
     const task = document.createElement("div");
     const text = document.createElement("p");
     const deleteBtn = document.createElement("button");
@@ -33,14 +34,15 @@ button.addEventListener("click", ()=>{
 task.classList.add("task");
 
 // append text and button INSIDE task
-    task.appendChild(text);
-    task.appendChild(deleteBtn);
+    task.append(text);
+    task.append(deleteBtn);
 
     // append task INSIDE container
-    container.appendChild(task);
+    container.append(task);
 
     /* //delete functionality */
     deleteBtn.addEventListener("click", () => {
+        container.prepend(task);
     
     if (!task.classList.contains("completed")) {
         task.classList.add("completed");
@@ -52,6 +54,8 @@ task.classList.add("task");
     }
 
 });
+
+ 
     //clear output
 
     input.value = "";
