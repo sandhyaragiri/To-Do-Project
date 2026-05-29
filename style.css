@@ -12,7 +12,6 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
 /* HEADER */
 
 .header {
@@ -68,7 +67,7 @@ body {
 
     font-size: 1rem;
 
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 5px rgba(247, 245, 245, 0.991);
 
     transition: 0.2s ease;
 }
