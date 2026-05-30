@@ -79,6 +79,10 @@ body {
     color: black;
 }
 
+.dark .task button:hover {
+    color: white;
+}
+
 
 /* MAIN */
 
@@ -224,13 +228,15 @@ body {
 }
 
 .task button:hover {
-    background-color: rgb(199, 113, 245);
-
+    background-color: lightseagreen;
     transform: scale(1.03);
 }
 
+
+
 .task .remove-btn:hover {
     background-color: red;
+    color: white;
 
 }
 

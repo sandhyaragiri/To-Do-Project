@@ -2,11 +2,6 @@ const input = document.querySelector("#input");
 const button = document.querySelector("#btn");
 const container = document.querySelector("#container");
 const theme = document.querySelector("#theme");
-const paras = document.querySelectorAll("p");
-
-paras.forEach((para)=>{
-    console.log(para.textContent);
-})
 
 //toggle theme here goes..
 
