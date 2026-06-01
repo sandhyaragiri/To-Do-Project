@@ -41,10 +41,6 @@ While building this project, I gained hands-on experience with JavaScript DOM ma
 * Update UI based on application state
 * Implement task management features using JavaScript
 
-## 📸 Preview
-
-Add screenshots or a demo GIF here.
-
 ## 🔮 Future Improvements
 
 * Edit tasks
