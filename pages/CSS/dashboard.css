@@ -54,7 +54,8 @@ body {
     padding: 1.5em;
 
     border-radius: 1em;
-    background-color:rgb(111, 111, 193);
+    background-color: transparent;
+    box-shadow: 0 0 2px black;
 
     cursor: pointer;
     transition: 0.3s;
@@ -62,7 +63,7 @@ body {
 
 .card p {
     margin-top: 1em;
-    color: white;
+    color: black;
 }
 
 .card:hover {

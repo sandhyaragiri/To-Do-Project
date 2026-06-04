@@ -4,8 +4,8 @@ taskflow.addEventListener("click", () => {
     window.location.href = "./pages/taskflow.html";
 });
 
-const navbar = document.querySelector("#navBar");
+const settings = document.querySelector("#settings");
 
-navbar.addEventListener("click", () => {
-    window.location.href = "./pages/settings.html";
+settings.addEventListener("click", () => {
+   window.location.href = "./pages/settings.html";
 });
