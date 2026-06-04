@@ -33,6 +33,9 @@ label {
 
 
 select {
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
     font-size: 1em;
     padding: 0.5em;
     margin-top: 10px;
@@ -41,16 +44,11 @@ select {
 
 select:focus {
     outline: none;
-    border: none;
 }
 
-.close-btn {
-    background-color: white;
-    border: none;
-    font-weight: bold;
-    margin-top: 20px;
-    padding: 0.2em;
-    font-size: 1.5em;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+select option {
+    background-color: rgb(244, 245, 246);
+    color: black;
 }
+
 
