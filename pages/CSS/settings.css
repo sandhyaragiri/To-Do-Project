@@ -51,4 +51,9 @@ select option {
     color: black;
 }
 
+.optionDark {
+    background-color: white;
+    color: white;
+}
+
 
