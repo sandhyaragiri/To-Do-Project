@@ -5,6 +5,7 @@
 }
 
 body {
+    background-color:rgb(244, 42, 116);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     min-height: 100vh;
 }
@@ -69,8 +70,9 @@ body {
 .card:hover {
     transform: translateY(-6px);
     background-color: rgb(244, 42, 116);
-    box-shadow: 0 6px 0 rgb(14, 37, 37);
+    box-shadow: 0 5px 0 rgb(144, 243, 243);
     color: white;
+    border: 1px solid white;
 }
 
 .card:hover p {
