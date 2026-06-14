@@ -5,9 +5,10 @@
 }
 
 body {
-    background-color:rgb(244, 42, 116);
+    background-color: rgba(244, 42, 116, 0.881);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     min-height: 100vh;
+    color: white;
 }
 
 /* Header */
@@ -17,7 +18,7 @@ body {
     justify-content: start;
     align-items: center;
     padding: 1em;
-    box-shadow: 0 0 2px black;
+    box-shadow: 0 0 2px rgb(248, 244, 244);
 }
 
 .header h1 {
@@ -56,7 +57,7 @@ body {
 
     border-radius: 1em;
     background-color: transparent;
-    box-shadow: 0 0 2px black;
+    box-shadow: 0 0 2px rgb(248, 246, 246);
 
     cursor: pointer;
     transition: 0.3s;
@@ -69,25 +70,29 @@ body {
 
 .card:hover {
     transform: translateY(-6px);
-    background-color: rgb(244, 42, 116);
-    box-shadow: 0 5px 0 rgb(144, 243, 243);
-    color: white;
+    background-color: transparent;
+    box-shadow: 0 6px 0 rgb(144, 243, 243);
+    color: black;
     border: 1px solid white;
 }
 
 .card:hover p {
-    color: black;
+    color: white;
 }
 
 /* Mobile */
 
 @media (max-width: 600px) {
 
+    body {
+         background-color: rgba(244, 42, 116, 0.881);
+    }
+
     .header {
         margin: 1em;
         padding: 0.8em;
         border-radius: 1em;
-        box-shadow: 0 0 5px black;
+        box-shadow: 0 0 5px rgb(244, 242, 242);
     }
 
     .logo {
