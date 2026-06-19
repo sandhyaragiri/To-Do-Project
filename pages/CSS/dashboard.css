@@ -85,7 +85,7 @@ body {
 @media (max-width: 600px) {
 
     body {
-         background-color: rgba(244, 42, 116, 0.881);
+         background-color: rgb(48, 55, 70);
     }
 
     .header {
@@ -94,6 +94,11 @@ body {
         border-radius: 1em;
         box-shadow: 0 0 5px rgb(244, 242, 242);
     }
+
+    .card p {
+        color: white;
+    }
+
 
     .logo {
         font-size: 1.4rem;
