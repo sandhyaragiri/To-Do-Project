@@ -5,10 +5,10 @@
 }
 
 body {
-    background-color: rgba(244, 42, 116, 0.881);
+    background-color: rgba(250, 247, 248, 0.881);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     min-height: 100vh;
-    color: white;
+    color: black;
 }
 
 /* Header */
@@ -18,7 +18,7 @@ body {
     justify-content: start;
     align-items: center;
     padding: 1em;
-    box-shadow: 0 0 2px rgb(248, 244, 244);
+    box-shadow: 0 0 2px rgb(13, 6, 6);
 }
 
 .header h1 {
@@ -57,7 +57,7 @@ body {
 
     border-radius: 1em;
     background-color: transparent;
-    box-shadow: 0 0 2px rgb(248, 246, 246);
+    box-shadow: 0 0 2px rgb(19, 9, 9);
 
     cursor: pointer;
     transition: 0.3s;
@@ -71,13 +71,13 @@ body {
 .card:hover {
     transform: translateY(-6px);
     background-color: transparent;
-    box-shadow: 0 6px 0 rgb(144, 243, 243);
+    box-shadow: 0 6px 0 black;
     color: black;
-    border: 1px solid white;
+    border: 1px solid black;
 }
 
 .card:hover p {
-    color: white;
+    color: rgba(0, 0, 255, 0.317);
 }
 
 /* Mobile */
