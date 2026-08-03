@@ -15,7 +15,7 @@ body {
 
 .header {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     padding: 1em;
     box-shadow: 0 0 2px rgb(13, 6, 6);
