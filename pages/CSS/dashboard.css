@@ -85,18 +85,18 @@ body {
 @media (max-width: 600px) {
 
     body {
-         background-color: rgb(48, 55, 70);
+         background-color: transparent;
     }
 
     .header {
         margin: 1em;
         padding: 0.8em;
-        border-radius: 1em;
-        box-shadow: 0 0 5px rgb(244, 242, 242);
+        border-radius: 2em;
+        box-shadow: 0 0 5px rgb(11, 5, 5);
     }
 
     .card p {
-        color: white;
+        color: black;
     }
 
 
