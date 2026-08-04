@@ -7,6 +7,7 @@ themeToggle.addEventListener("click", ()=>{
 
 if(document.body.classList.contains("bgColor")){
     themeToggle.textContent = "☀️";
+    themeToggle.title = "light Mode";
 }
 
 else {

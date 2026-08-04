@@ -25,6 +25,14 @@ body {
     font-size: 1.5em;
 }
 
+/* //STYLING TOGGLE BUTTON HERE */
+#themeToggle {
+    font-size: 1.3em;
+    background: transparent;
+    border: none;
+    padding: 5px;
+}
+
 .bgColor{
     background: black;
     color: white;
