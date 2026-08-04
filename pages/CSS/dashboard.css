@@ -25,6 +25,33 @@ body {
     font-size: 1.5em;
 }
 
+.bgColor{
+    background: black;
+    color: white;
+}
+
+.bgColor header {
+    box-shadow: 0 0 5px white;
+}
+
+.bgColor .card {
+     box-shadow: 0 0 2px rgb(248, 245, 245);
+}
+
+.bgColor .card p {
+    color: white;
+}
+
+.bgColor .card:hover{
+    box-shadow: 0 6px 0 white;
+    border: 1px solid white;
+    color: white;
+} 
+
+.bgColor .card:hover p{
+    color: white;
+}
+
 /* Dashboard */
 
 .dashboard {
