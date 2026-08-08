@@ -1,6 +1,6 @@
 # To-Do-Project
 
-A simple and interactive To-Do App built with HTML, CSS, and JavaScript to practice DOM manipulation and event handling.
+TaskFlow is a simple and responsive To-Do application built with HTML, CSS, and JavaScript. It helps users add, manage, and complete daily tasks through a clean and interactive interface.
 
 ## 🚀 Features
 
