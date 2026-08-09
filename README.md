@@ -50,8 +50,4 @@ While building this project, I gained hands-on experience with JavaScript DOM ma
 * Due dates and reminders
 * Strict mode with proof-based task completion
 
-## 👩‍💻 Author
 
-**Ragiri Sandhya**
-
-Frontend Developer | Learning JavaScript | Building Projects
