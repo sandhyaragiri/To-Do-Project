@@ -1,8 +1,8 @@
-const accentSelector = document.getElementById("#accentSelector");
+const accentSelector = document.querySelector("#accentSelector");
 
-accentSelector.addEventListener("change", () => {
+accentSelector.addEventListener("change", function () {
     document.documentElement.style.setProperty(
         "--accent-color",
-        accentSelector.value
+        this.value
     );
 });
