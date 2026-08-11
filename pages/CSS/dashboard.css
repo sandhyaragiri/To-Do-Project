@@ -11,6 +11,10 @@ body {
     color: black;
 }
 
+:root {
+    --accent-color: #C4B5FD;
+}
+
 /* Header */
 
 .header {
@@ -107,9 +111,9 @@ body {
 .card:hover {
     transform: translateY(-6px);
     background-color: transparent;
-    box-shadow: 0 6px 5px rgb(18, 2, 2);
+    box-shadow: 3px 6px 5px var(--accent-color);
     color: black;
-    border: 1px solid black;
+    border: none;
 }
 
 .card:hover p {
