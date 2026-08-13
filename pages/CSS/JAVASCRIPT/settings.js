@@ -1,3 +1,12 @@
+//HERE FOR FONT-STYLE JS CODE
+const fontSelector = document.querySelector("#fontSelector");
+
+fontSelector.addEventListener("fontChange", ()=>{
+    document.documentElement.style.setProperty(
+        "--font-family", this.value);
+});
+
+//HERE ACCENT COLOR JS CODE
 const accentSelector = document.querySelector("#accentSelector");
 
 accentSelector.addEventListener("change", function () {
