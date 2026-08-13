@@ -1,11 +1,12 @@
 :root {
     --accent-color: #C4B5FD;
-    --font-family: Arial;
+    --font-family: Trebuchet MS;
 }
 
 body {
     font-family: var(--font-family);
 }
+
 
 .allsections {
     display: flex;

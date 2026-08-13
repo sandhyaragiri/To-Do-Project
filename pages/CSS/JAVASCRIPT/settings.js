@@ -3,7 +3,7 @@ const fontSelector = document.querySelector("#fontSelector");
 
 fontSelector.addEventListener("change", function(){
     document.documentElement.style.setProperty("--font-family", this.value);
-})
+});
 //HERE ACCENT COLOR JS CODE
 const accentSelector = document.querySelector("#accentSelector");
 
