@@ -1,20 +1,16 @@
 const themeToggle = document.querySelector("#themeToggle");
 
 
-// APPLY SAVED THEME WHEN PAGE LOADS
+// GET SAVED THEME
 
 const savedTheme = localStorage.getItem("theme");
 
 if (savedTheme === "dark") {
     document.documentElement.classList.add("dark");
-
-    if (themeToggle) {
-        themeToggle.textContent = "☀️";
-        themeToggle.title = "Light Mode";
-    }
 }
 
-// TOGGLE THEME
+
+// TOGGLE ONLY IF THE BUTTON EXISTS
 
 if (themeToggle) {
 
@@ -23,19 +19,19 @@ if (themeToggle) {
         document.documentElement.classList.toggle("dark");
 
         if (document.documentElement.classList.contains("dark")) {
+            localStorage.setItem("theme", "dark");
 
             themeToggle.textContent = "☀️";
             themeToggle.title = "Light Mode";
+        }
 
-            localStorage.setItem("theme", "dark");
-
-        } else {
+        else {
+            localStorage.setItem("theme", "light");
 
             themeToggle.textContent = "🌙";
             themeToggle.title = "Dark Mode";
-
-            localStorage.setItem("theme", "light");
         }
+
     });
 
 }

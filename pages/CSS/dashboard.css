@@ -51,6 +51,32 @@ body {
     padding: 5px;
 }
 
+.dark{
+    background: black;
+    color: white;
+}
+
+.dark header {
+    box-shadow: 0 0 5px white;
+}
+
+.dark .card {
+     box-shadow: 0 0 2px rgb(248, 245, 245);
+}
+
+.dark .card p {
+    color: white;
+}
+
+.dark .card:hover{
+    box-shadow: 0 6px 5px white;
+    border: 1px solid white;
+    color: white;
+} 
+
+.dark .card:hover p{
+    color: white;
+}
 
 /* Dashboard */
 
@@ -113,23 +139,23 @@ body {
 @media (max-width: 600px) {
 
     body {
-         background-color: transparent;
+        background-color: var(--bg-color);
     }
 
     .header {
         margin: 1em;
         padding: 0.8em;
         border-radius: 2em;
-        box-shadow: 0 0 5px rgb(11, 5, 5);
+        box-shadow: 0 0 5px var(--shadow-color);
     }
 
     .card p {
-        color: black;
+        color: var(--text-color);
     }
-
 
     .logo {
         font-size: 1.4rem;
+        color: var(--text-color);
     }
 
     .dashboard {

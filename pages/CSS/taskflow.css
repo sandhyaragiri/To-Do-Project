@@ -22,11 +22,11 @@ body {
     background-color: transparent;
     border-radius: 3em;
     margin: 20px;
-    box-shadow: 0 0 3px rgba(12, 12, 12, 0.952);
+    box-shadow: 0 0 3px var(--shadow-color);
 }
 
 .logo {
-    color: black;
+    color: var(--text-color);
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -60,16 +60,15 @@ body {
 
 #input {
     flex: 1;
-
     padding: 18px;
 
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     border-radius: 18px;
 
-    background-color: transparent;
+    background-color: var(--input-bg);
+    color: var(--text-color);
 
     font-size: 1rem;
-
     transition: 0.2s ease;
 }
 
@@ -80,8 +79,7 @@ body {
 }
 
 #input::placeholder {
-    color: rgba(0, 0, 0, 0.5);
-
+    color: var(--placeholder-color);
     letter-spacing: 1px;
 }
 
@@ -126,16 +124,15 @@ body {
     align-items: center;
 
     gap: 12px;
-
     padding: 16px;
 
     border-radius: 20px;
 
-    background: rgb(255, 255, 255);
+    background: var(--card-color);
 
     backdrop-filter: blur(10px);
 
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 30px var(--shadow-color);
 
     transition: 0.2s ease;
 }
@@ -147,7 +144,7 @@ body {
 .task p {
     flex: 1;
 
-    color: black;
+    color: var(--text-color);
 
     font-size: 1.2rem;
     line-height: 1.5;
@@ -202,11 +199,11 @@ body {
     .header {
         padding: 10px;
         text-align: center;
-        box-shadow: 0 0 5px black;
+        box-shadow: 0 0 5px var(--shadow-color);
     }
 
     .logo {
-        color: black;
+        color: var(--text-color);
     }
 
     .input-box {
@@ -214,13 +211,13 @@ body {
     }
 
     #input {
-        border: 1px solid rgb(11, 6, 6);
-         background-color: transparent;
+        border: 1px solid var(--border-color);
+         background-color: var(--input-bg);
     }
 
     #btn {
         width: 100%;
-        box-shadow: 0 0 5px black;
+        box-shadow: 0 0 5px var(--shadow-color);
         background: linear-gradient(135deg, #6da5ef, #e9d5ff);
     }
 
@@ -230,13 +227,13 @@ body {
     }
 
     .task p {
-        color: black;
+        color: var(--text-color);
     }
 
     .task button {
         width: 100%;
-        background-color: black;
-        color: white;
+        background-color: var(--text-color);
+        color: var(--bg-color);
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
