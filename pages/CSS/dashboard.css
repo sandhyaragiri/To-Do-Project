@@ -9,15 +9,15 @@
     --text-color: #111111;
     --card-color: transparent;
     --border-color: #130909;
-    --shadow-color: #130909;
+    --shadow-color: #e32020;
 }
 
 .dark {
     --bg-color: #121212;
-    --text-color: #ffffff;
+    --text-color: #faf7f8;
     --card-color: transparent;
-    --border-color: #ffffff;
-    --shadow-color: #ffffff;
+    --border-color: #faf7f8;
+    --shadow-color: #37e414;
 }
 
 
@@ -49,33 +49,6 @@ body {
     background: transparent;
     border: none;
     padding: 5px;
-}
-
-.dark{
-    background: black;
-    color: white;
-}
-
-.dark header {
-    box-shadow: 0 0 5px white;
-}
-
-.dark .card {
-     box-shadow: 0 0 2px rgb(248, 245, 245);
-}
-
-.dark .card p {
-    color: white;
-}
-
-.dark .card:hover{
-    box-shadow: 0 6px 5px white;
-    border: 1px solid white;
-    color: white;
-} 
-
-.dark .card:hover p{
-    color: white;
 }
 
 /* Dashboard */
@@ -125,7 +98,7 @@ body {
 .card:hover {
     transform: translateY(-6px);
     background-color: var(--card-color);
-    box-shadow: 3px 4px 5px var(--shadow-color);
+    box-shadow: 5px 4px 5px var(--shadow-color);
     color: var(--text-color);
     border: none;
 }
