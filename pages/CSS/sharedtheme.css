@@ -1,0 +1,24 @@
+:root {
+    --bg-color: #faf7f8;
+    --text-color: #111111;
+    --card-color: #ffffff;
+     --border-color: #dddddd;
+    --shadow-color: rgba(12, 12, 12, 0.25);
+    --input-bg: transparent;
+    --placeholder-color: rgba(0, 0, 0, 0.5);
+}
+
+.dark {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --card-color: #1e1e1e;
+     --border-color: #444444;
+    --shadow-color: rgba(255, 255, 255, 0.2);
+    --input-bg: #1e1e1e;
+    --placeholder-color: rgba(255, 255, 255, 0.5);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}

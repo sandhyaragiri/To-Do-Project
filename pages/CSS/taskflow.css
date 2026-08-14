@@ -7,7 +7,7 @@
 body {
     min-height: 100vh;
 
-    background-color: white;
+    background-color: var(--bg-color);
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -31,58 +31,6 @@ body {
     font-weight: bold;
 }
 
-/* /* //toggle  */
-
-#theme {
-    padding: 10px 15px;
-    font-size: 1.2em;
-    background-color: transparent;
-    border: none;
-}
-
-.dark {
-    background-color: black;
-    color: white;
-}
-
-.dark header {
-    background: transparent;
-    box-shadow: 0 0 5px white;
-}
-
-.dark .logo {
-    color: white;
-}
-
-.dark #input {
-    background: transparent;
-    box-shadow: 0 0 5px white;
-    color: white;
-}
-
-.dark #input::placeholder {
-    color: white;
-}
-
-.dark .task {
-    background: transparent;
-    box-shadow: 0 0 5px white;
-    color: white;
-}
-
-.dark .task p {
-    color: white;
-}
-
-.dark .task button {
-    background-color: white;
-    color: black;
-}
-
-.dark .task button:hover {
-    color: white;
-}
- */*/
 
 /* MAIN */
 

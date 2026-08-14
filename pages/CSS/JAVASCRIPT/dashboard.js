@@ -1,21 +1,7 @@
 const taskflow = document.querySelector("#taskflow");
-const themeToggle = document.querySelector("#themeToggle");
-
-//TOGGLE BACKGROUND COLOR OR THEME CODE GOES HERE
-themeToggle.addEventListener("click", ()=>{
-    document.body.classList.toggle("bgColor");
-
-if(document.body.classList.contains("bgColor")){
-    themeToggle.textContent = "☀️";
-    themeToggle.title = "light Mode";
-}
-
-else {
-    themeToggle.textContent = "🌙";
-}
-});
 
 
+//LINKING PAGES HERE
 taskflow.addEventListener("click", () => {
     window.location.href = "./pages/taskflow.html";
 });

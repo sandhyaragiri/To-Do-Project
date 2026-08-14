@@ -1,21 +1,6 @@
 const input = document.querySelector("#input");
 const button = document.querySelector("#btn");
 const container = document.querySelector("#container");
-const theme = document.querySelector("#theme");
-
-/* //toggle theme here goes..
-
-theme.addEventListener("click", ()=>{
-   document.body.classList.toggle("dark");
-   
-   if(document.body.classList.contains("dark")) {
-    theme.textContent = "☀️";
-   }
-
-   else {
-    theme.textContent = "🌙";
-   }
-}); */
 
 
 button.addEventListener("click", ()=>{
