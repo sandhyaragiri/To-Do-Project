@@ -3,7 +3,7 @@ const button = document.querySelector("#btn");
 const container = document.querySelector("#container");
 const theme = document.querySelector("#theme");
 
-//toggle theme here goes..
+/* //toggle theme here goes..
 
 theme.addEventListener("click", ()=>{
    document.body.classList.toggle("dark");
@@ -15,7 +15,7 @@ theme.addEventListener("click", ()=>{
    else {
     theme.textContent = "🌙";
    }
-});
+}); */
 
 
 button.addEventListener("click", ()=>{
