@@ -20,7 +20,7 @@ body {
     background-color: transparent;
     border-radius: 3em;
     margin: 20px;
-    box-shadow: 0 0 3px var(--shadow-color);
+    border: 1px solid var(--border-color);
 }
 
 .logo {
@@ -197,7 +197,6 @@ body {
     .header {
         padding: 10px;
         text-align: center;
-        box-shadow: 0 0 5px var(--shadow-color);
     }
 
     .logo {
