@@ -8,15 +8,17 @@
     --bg-color: #faf7f8;
     --text-color: #111111;
     --card-color: transparent;
-    --border-color: #e32020;
-    --shadow-color: #e32020;
+    --border-color: #209be3;
+    --shadow-color: #209be3;
+    --hover-color: rgb(130, 209, 251);
+    --hover-odd: rgba(0, 0, 0, 0.137);
 }
 
 .dark {
     --bg-color: #121212;
     --text-color: #faf7f8;
     --card-color: transparent;
-    --border-color: #faf7f8;
+    --border-color: #37e414;
     --shadow-color: #37e414;
 }
 
@@ -36,7 +38,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1em;
-    border: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .header h1 {
@@ -96,11 +98,19 @@ body {
 }
 
 .card:hover {
+    background: linear-gradient(to right bottom, var(--hover-color), rgb(90, 237, 225));
+    box-shadow: none;
     transform: translateY(-6px);
-    background-color: var(--card-color);
-    box-shadow: 5px 4px 5px var(--shadow-color);
     color: var(--text-color);
 }
+
+.card:active {
+    background: linear-gradient(to right bottom, var(--hover-color), rgb(90, 237, 225));
+    box-shadow: none;
+    transform: translateY(-6px);
+    color: var(--text-color);
+}
+
 
 .card:hover p {
     color: var(--text-color);
@@ -119,6 +129,13 @@ body {
         padding: 0.8em;
         border-radius: 2em;
     }
+
+    .card {
+    background: linear-gradient(to right bottom, var(--hover-color), rgb(90, 237, 225));
+    box-shadow: none;
+    transform: translateY(-6px);
+    color: var(--text-color);
+}
 
     .card p {
         color: var(--text-color);
