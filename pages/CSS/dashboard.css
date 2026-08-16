@@ -5,13 +5,14 @@
 }
 
 :root {
-    --main-gradient: linear-gradient(135deg, white, rgb(89, 173, 247));
+    --main-gradient: linear-gradient(135deg, white, rgb(152, 205, 252));
     --text-color: #111111;
     --card-color: transparent;
     --border-color: #209be3;
     --shadow-color: #209be3;
     --hover-color: #77bff763;
-    --togglebg-color: #209be3;
+    --toggleborder-color: #85ccf5;
+    --box-shadowtoggle: rgb(16, 3, 3);
 }
 
 .dark {
@@ -21,7 +22,8 @@
     --border-color: #37e414;
     --shadow-color: #37e414;
     --hover-color: #edf4f21c;
-    --togglebg-color: green;
+    --toggleborder-color: green;
+    --box-shadowtoggle: white;
 }
 
 
@@ -53,9 +55,12 @@ body {
     background: transparent;
     border: none;
     padding: 5px;
+}
 
-    background-color: var(--togglebg-color);
+#themeToggle:active{
+    border: 1px solid var(--toggleborder-color);
     border-radius: 50%;
+    box-shadow: 0 0 5px var(--box-shadowtoggle);
 }
 
 /* Dashboard */
