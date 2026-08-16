@@ -11,6 +11,7 @@
     --border-color: #209be3;
     --shadow-color: #209be3;
     --hover-color: #77bff763;
+    --togglebg-color: #209be3;
 }
 
 .dark {
@@ -20,6 +21,7 @@
     --border-color: #37e414;
     --shadow-color: #37e414;
     --hover-color: #edf4f21c;
+    --togglebg-color: green;
 }
 
 
@@ -51,6 +53,9 @@ body {
     background: transparent;
     border: none;
     padding: 5px;
+
+    background-color: var(--togglebg-color);
+    border-radius: 50%;
 }
 
 /* Dashboard */
