@@ -10,7 +10,7 @@
     --card-color: transparent;
     --border-color: #209be3;
     --shadow-color: #209be3;
-    --hover-color: #6aa7f7;
+    --hover-color: #77bff763;
 }
 
 .dark {
@@ -19,7 +19,7 @@
     --card-color: transparent;
     --border-color: #37e414;
     --shadow-color: #37e414;
-    --hover-color: #03895f;
+    --hover-color: #edf4f21c;
 }
 
 
@@ -105,7 +105,7 @@ body {
 }
 
 .card:active {
-    background: linear-gradient(to right bottom, var(--hover-color), rgb(90, 237, 225));
+    background-color: var(--hover-color);
     box-shadow: none;
     transform: translateY(-6px);
     color: var(--text-color);
