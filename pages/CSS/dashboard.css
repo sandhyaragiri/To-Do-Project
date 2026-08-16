@@ -5,7 +5,7 @@
 }
 
 :root {
-    --bg-color: #faf7f8;
+    --main-gradient: linear-gradient(135deg, white, rgb(89, 173, 247));
     --text-color: #111111;
     --card-color: transparent;
     --border-color: #209be3;
@@ -14,7 +14,7 @@
 }
 
 .dark {
-    --bg-color: #121212;
+    --main-gradient: linear-gradient(135deg, black,#013e18);
     --text-color: #faf7f8;
     --card-color: transparent;
     --border-color: #37e414;
@@ -24,7 +24,7 @@
 
 
 body {
-    background-color: var(--bg-color);
+    background: var(--main-gradient);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     min-height: 100vh;
     color: var(--text-color);
