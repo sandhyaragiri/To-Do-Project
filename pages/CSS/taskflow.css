@@ -173,6 +173,7 @@ body {
 .task button:hover {
     background-color: lightseagreen;
     transform: scale(1.03);
+    color: white;
 }
 
 
