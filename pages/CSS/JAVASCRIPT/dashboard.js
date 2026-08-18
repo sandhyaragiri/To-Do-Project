@@ -23,3 +23,4 @@ const notes = document.querySelector("#notes");
 notes.addEventListener("click", ()=>{
     alert("WORK IN PROGRESS");
 });
+
